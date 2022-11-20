@@ -1,0 +1,17 @@
+kind: pipeline
+type: docker
+name: default
+
+steps:
+  - name: publish
+    image: plugins/docker
+    environment:
+    settings:
+      username:
+        from_secret: docker-hub-username
+      password:
+        from_secret: docker-hub-password
+      repo: emilianobovetti/fpc-js-builder
+      tags: latest
+      when:
+        branch: master
