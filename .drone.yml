@@ -13,5 +13,5 @@ steps:
         from_secret: docker-hub-password
       repo: emilianobovetti/fpc-js-builder
       tags: latest
-      when:
-        branch: master
+    when:
+      branch: master
