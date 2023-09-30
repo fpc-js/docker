@@ -1,4 +1,4 @@
-FROM alpine:3.17.0
+FROM alpine:3.18.4
 
 ENV CODECOV=/usr/bin/codecov
 ENV CODECOV_VERSION=0.3.2
